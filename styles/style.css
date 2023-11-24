@@ -1,0 +1,75 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+}
+
+body {
+    background-color: white !important;
+}
+
+.label-info {
+    cursor: pointer;
+}
+
+label {
+    color: #1111118A;
+    font-size: .86667em;
+    line-height: calc(1em + 7px);
+    color: #999;
+    margin-bottom: 0px;
+}
+
+.c-header a {
+    color: #5b5b5b !important;
+    font-weight: 700;
+}
+
+.micros-convertor-input:focus {
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid #0066ff !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.micros-convertor-input {
+    outline: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.micros-convertor-element {
+    cursor: pointer;
+    background-color: #ecf1f7;
+}
+
+.c-header {
+    background-color: white;
+}
+
+.c-header a {
+    color: #5b5b5b;
+    font-weight: 700;
+}
+
+.c-header a:hover {
+    color: #5b5b5b !important;
+}
+
+.card, .card-header {
+    border-radius: 10px !important;
+}
+
+.card-header {
+    border-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
