@@ -64,11 +64,7 @@
             
             "initOnSelectionChanged" : true,
 			
-<<<<<<< HEAD
 			"events" : ["onTargetPositionChanged", "onCLick", "onFocusContentControl"]
-=======
-			"events" : ["onTargetPositionChanged"]
->>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
         }
     ]
 }
