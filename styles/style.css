@@ -5,6 +5,7 @@ html, body {
     width:100%;
     height:100%;
 }
+<<<<<<< HEAD
 
 body {
     background-color: white !important;
@@ -14,6 +15,20 @@ body {
     cursor: pointer;
 }
 
+=======
+body {
+    background-color: white !important;
+}
+/* .label-hovered	{
+    background: rgba(200, 200, 200, 0.5);
+}
+.label-selected	{
+    background: #aaa;
+} */
+.label-info {
+    cursor: pointer;
+}
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 label {
     color: #1111118A;
     font-size: .86667em;
@@ -21,7 +36,10 @@ label {
     color: #999;
     margin-bottom: 0px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 .c-header a {
     color: #5b5b5b !important;
     font-weight: 700;
@@ -35,6 +53,17 @@ label {
     border-left: none;
     border-right: none;
 }
+<<<<<<< HEAD
+=======
+/* .micros-convertor-input:focus {
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid #0066ff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+} */
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 
 .micros-convertor-input {
     outline: none;
@@ -60,7 +89,10 @@ label {
     color: #5b5b5b;
     font-weight: 700;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 .c-header a:hover {
     color: #5b5b5b !important;
 }
@@ -68,7 +100,10 @@ label {
 .card, .card-header {
     border-radius: 10px !important;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 .card-header {
     border-bottom: 0px !important;
     padding-bottom: 0px !important;

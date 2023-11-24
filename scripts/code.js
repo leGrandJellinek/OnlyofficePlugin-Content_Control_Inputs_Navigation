@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+=======
+/**
+ *
+ * (c) Copyright Ascensio System SIA 2020
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 (function(window, undefined){
 	var flagInit = false;
 	var fBtnGetAll = false;
@@ -48,13 +68,17 @@
 				for (let l = 0; l < aContentControls.length; l++) {
 					const contentControl = aContentControls[l];
 					console.log(contentControl);
+<<<<<<< HEAD
 					const contentControlEl = JSON.parse(contentControl.ToJSON())
+=======
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 					let contentControlObjFilter = {
 						"Id":contentControl.be.ha.$a,
 						"Tag": contentControl.be.ha.TA,
 						"Alias": contentControl.be.ha.oE,
 						"InternalId": contentControl.be.$a,
 					}
+<<<<<<< HEAD
 					if(contentControlEl.sdtPr.dropDownList || contentControlEl.sdtPr.comboBox){
 						//console.log(contentControlEl);
 						const contentControlDropDown = contentControl.GetDropdownList();
@@ -73,11 +97,19 @@
 					}
 					/* contentControl.be.ha.Date */
 					else if(contentControlEl.sdtPr.date){
+=======
+					if(contentControl.be.ha.kK){
+						contentControlObjFilter["Type"] = "dropdown";
+						contentControlObjFilter["Checkboxes"] = contentControl.be.ha.kK.eA;
+					}
+					else if(contentControl.be.ha.Date){
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 						contentControlObjFilter["Date"] = contentControl.be.ha.Date;
 						contentControlObjFilter["Type"] = "date";
 					}
 					else {
 						contentControlObjFilter["Type"] = "text"
+<<<<<<< HEAD
 						let contentControlBlockType = contentControl.GetClassType();
 						if(contentControlBlockType == "blockLvlSdt"){
 							// console.log(JSON.parse(contentControl.ToJSON(true, true)));
@@ -113,6 +145,9 @@
 						}
 					}
 
+=======
+					}
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 					contentControlsArr.push(contentControlObjFilter)
 				}
 				let result = [];
@@ -161,6 +196,7 @@
 	};
 
 	addLabel = (returnValue, element) => {
+<<<<<<< HEAD
 		// console.log(returnValue);
 		if(returnValue.Type == "dropdown"){
 			console.log(returnValue);
@@ -168,6 +204,15 @@
 			for (let l = 0; l < returnValue.dropdown.length; l++) {
 				const checkbox = returnValue.dropdown[l];
 				checkboxesHtmlblock = checkboxesHtmlblock + `<br><label style="color: black;"><input type="radio" data-id="${returnValue.InternalId}" value="${checkbox.text}"><div style="display: inline; padding-left: 5px">${checkbox.text}</div></label>`;
+=======
+		console.log(returnValue);
+		if(returnValue.Type == "dropdown"){
+			let checkboxesHtmlblock = '';
+			console.log(returnValue.InternalId);
+			for (let l = 0; l < returnValue.Checkboxes.length; l++) {
+				const checkbox = returnValue.Checkboxes[l];
+				checkboxesHtmlblock = checkboxesHtmlblock + `<br><label style="color: black;"><input type="radio" data-id="${returnValue.InternalId}" value="${checkbox.pa}"><div style="display: inline; padding-left: 5px">${checkbox.pa}</div></label>`;
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 			}
 			$(element).append($('<div>', {
 					class: 'form-group'
@@ -252,7 +297,11 @@
 				.append($('<input>',{
 					id : returnValue.InternalId,
 					class: "form-control micros-convertor-input",
+<<<<<<< HEAD
 					value: returnValue.Content,
+=======
+					value: returnValue.content,
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 					on : {
 						focus: function(){
 							$('.focus').removeClass('focus');
@@ -265,6 +314,7 @@
 								window.Asc.plugin.executeMethod("MoveCursorToContentControl",[this.id, true]);
 							}
 						},
+<<<<<<< HEAD
 						input: async function(){
 							let previousValue = returnValue.Content;
 							returnValue.Content = this.value
@@ -316,6 +366,10 @@
 								   	// Api.GetDocument().InsertContent([oParagraph], true, {KeepTextOnly: true});
 							   });
 							}
+=======
+						input: function(){
+							console.log(this.value);
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 						}
 					}
 				}))
@@ -335,7 +389,10 @@
 	// 		});
 	// 	});
 	// }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
     window.Asc.plugin.button = function()
     {
 		this.executeCommand("close", "");
@@ -410,7 +467,10 @@
 			
 
 		} 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 		// else if (_plugin.info.methodName == "GetCurrentContentControl") {
 		// 	if (fClickBtnCur) {
 		// 		//method for select content control by id
@@ -459,6 +519,7 @@
 		}
 	};
 
+<<<<<<< HEAD
 	/* Ивенты */
 	window.Asc.plugin.event_onClick = function(isSelectionUse) {
 		window.Asc.plugin.executeMethod("GetCurrentContentControlPr", [], function(obj) {
@@ -474,6 +535,8 @@
 	    focusContentControl(control);
 	};
 
+=======
+>>>>>>> 19930efb71e8f9bd2456dbd2045809a44d51c9b3
 	window.Asc.plugin.event_onTargetPositionChanged = function()
 	{
 		//event change cursor position
