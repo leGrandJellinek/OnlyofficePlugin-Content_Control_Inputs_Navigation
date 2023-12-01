@@ -448,7 +448,6 @@
 	// 		});
 	// 	});
 	// }
-
     window.Asc.plugin.button = function()
     {
 		this.executeCommand("close", "");
@@ -523,7 +522,6 @@
 			
 
 		} 
-
 		// else if (_plugin.info.methodName == "GetCurrentContentControl") {
 		// 	if (fClickBtnCur) {
 		// 		//method for select content control by id

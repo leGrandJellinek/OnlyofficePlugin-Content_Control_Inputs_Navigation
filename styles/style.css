@@ -21,7 +21,6 @@ label {
     color: #999;
     margin-bottom: 0px;
 }
-
 .c-header a {
     color: #5b5b5b !important;
     font-weight: 700;
@@ -60,7 +59,6 @@ label {
     color: #5b5b5b;
     font-weight: 700;
 }
-
 .c-header a:hover {
     color: #5b5b5b !important;
 }
@@ -68,7 +66,6 @@ label {
 .card, .card-header {
     border-radius: 10px !important;
 }
-
 .card-header {
     border-bottom: 0px !important;
     padding-bottom: 0px !important;
